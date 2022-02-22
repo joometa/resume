@@ -8,7 +8,6 @@ const Wrap = styled.div`
   width: 100%;
   max-width: 50rem;
   margin: auto;
-  background-color: lightblue;
 `;
 
 function App() {
