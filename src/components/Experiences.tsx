@@ -13,7 +13,7 @@ const Experiences = ({ className }: ExperiencesProps) => {
       <h2 className="title">Experiences</h2>
 
       {workExperiences.map((ex: WorkExperience) => (
-        <div className="row">
+        <div className="row" key={ex.id}>
           <div className="row-left">
             <h3>{ex.corporation.name}</h3>
             <span className="position">{ex.corporation.position}</span>
@@ -30,8 +30,8 @@ const Experiences = ({ className }: ExperiencesProps) => {
             </span>
           </div>
           <div className="row-right">
-            {ex.project.map((pjt) => (
-              <div className="project">
+            {ex.project.map((pjt, idx) => (
+              <div className="project" key={idx}>
                 <h4>{pjt.title}</h4>
                 <span className="range">
                   <time dateTime="2021-11">{pjt.range.from}</time>
@@ -51,7 +51,7 @@ const Experiences = ({ className }: ExperiencesProps) => {
                 <h5>What did I do</h5>
                 <ul>
                   {pjt.whatIdid.map((did) => (
-                    <li>{did}</li>
+                    <li key={did}>{did}</li>
                   ))}
                 </ul>
 

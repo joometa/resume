@@ -1,6 +1,7 @@
 export type WorkExperiences = WorkExperience[];
 
 export type WorkExperience = {
+  id: number;
   corporation: Corporation;
   project: Project[];
 };
@@ -23,4 +24,14 @@ export type Project = {
   describe: string;
   whatIdid: string[];
   techStack: string;
+};
+
+export type Education = {
+  id: number;
+  title: string;
+  range: {
+    from: string;
+    to: string;
+  };
+  describe: string;
 };

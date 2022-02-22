@@ -2,6 +2,7 @@ import { WorkExperiences } from '@core/types';
 
 export const workExperiences: WorkExperiences = [
   {
+    id: 1,
     corporation: {
       name: 'OMNIOUS',
       range: {
