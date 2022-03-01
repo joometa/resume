@@ -1,0 +1,29 @@
+.edu-container {
+  width: 100%;
+  margin: 2rem 0;
+
+  h2 {
+    font-size: 2em;
+    margin: 4rem 0 2rem;
+  }
+
+  .history {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+
+    h3 {
+      font-size: 1.8em;
+      margin: 0 0 1rem;
+    }
+    .time {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      margin: 0 0 1rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      word-break: keep-all;
+    }
+  }
+}

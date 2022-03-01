@@ -5,9 +5,9 @@ type IntroProps = {
   className?: string;
 };
 
-const Intro = ({ className }: IntroProps) => {
+export const Intro = ({ className }: IntroProps) => {
   return (
-    <section className={`${className}`}>
+    <section className="intro-container">
       <h1 className="title">이정주</h1>
       <div className="update">
         <sub>
@@ -18,20 +18,3 @@ const Intro = ({ className }: IntroProps) => {
     </section>
   );
 };
-
-export default styled(Intro)`
-  .title {
-    font-size: 2.4em;
-    margin: 55px 0 55px 0;
-  }
-
-  .update {
-    display: flex;
-    justify-content: right;
-    font-size: 14px;
-    color: #a2a2a2;
-  }
-  .description {
-    font-size: 2em;
-  }
-`;

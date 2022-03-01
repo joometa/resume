@@ -4,12 +4,6 @@ import styled from 'styled-components';
 import { Intro, Experiences, Education } from '../src/components';
 import '@src/assets/styles/app.scss';
 
-const Wrap = styled.div`
-  width: 100%;
-  max-width: 50rem;
-  margin: auto;
-`;
-
 function App() {
   return (
     <div className="container">
