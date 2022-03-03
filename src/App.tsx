@@ -1,7 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import styled from 'styled-components';
-import { Intro, Experiences, Education } from '../src/components';
+import { Intro, Experiences, Education } from '@src/components';
+import { Footer } from '@src/components/Footer';
 import '@src/assets/styles/app.scss';
 
 function App() {
@@ -12,6 +11,8 @@ function App() {
       <Experiences />
 
       <Education />
+
+      <Footer />
     </div>
   );
 }
