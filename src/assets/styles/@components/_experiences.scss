@@ -27,6 +27,13 @@
         line-height: 1.15;
         color: #a2a2a2;
       }
+      a {
+        display: block;
+        margin-top: 10px;
+        .github {
+          width: 20px;
+        }
+      }
     }
 
     .row-right {

@@ -11,6 +11,36 @@
     color: #a2a2a2;
   }
   .description {
+    height: 3em;
     font-size: 2em;
+  }
+
+  .contact {
+    width: 100%;
+    margin-top: 3em;
+
+    tr {
+      border: 1px solid #a2a2a254;
+      border-right: none;
+      border-left: none;
+      height: 3em;
+    }
+
+    .type {
+      display: flex;
+      font-size: 1rem;
+      font-weight: bold;
+      height: inherit;
+      justify-content: end;
+      align-items: center;
+      padding-right: 2em;
+    }
+    .info {
+      a {
+        text-decoration-line: none;
+        font-weight: bold;
+        color: #0687f0;
+      }
+    }
   }
 }
