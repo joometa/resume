@@ -1,5 +1,3 @@
-export type WorkExperiences = WorkExperience[];
-
 export type WorkExperience = {
   id: number;
   corporation: Corporation;
@@ -8,19 +6,13 @@ export type WorkExperience = {
 
 export type Corporation = {
   name: string;
-  range: {
-    from: string;
-    to: null | string;
-  };
+  range: Range;
   position: string;
 };
 
 export type Project = {
   title: string;
-  range: {
-    from: string;
-    to: string | null;
-  };
+  range: Range;
   describe: string;
   whatIdid: string[];
   techStack: string;
@@ -29,9 +21,27 @@ export type Project = {
 export type Education = {
   id: number;
   title: string;
-  range: {
-    from: string;
-    to: string;
-  };
+  range: Range;
   describe: string;
+};
+
+export type Range = {
+  from: string;
+  to: string | null;
+};
+
+export type PersonalExperience = {
+  id: number;
+  shortInfo: {
+    name: string;
+    range: Range;
+    position: string;
+    link: string;
+  };
+  project: {
+    title: string;
+    describe: string;
+    whatIdid: string[];
+    techStack: string;
+  };
 };
