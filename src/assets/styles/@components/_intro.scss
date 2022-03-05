@@ -1,18 +1,57 @@
 .intro-container {
-  .title {
-    font-size: 2.4em;
-    margin: 55px 0 55px 0;
-  }
+  padding-bottom: 4rem;
 
   .update {
     display: flex;
     justify-content: right;
     font-size: 14px;
     color: #a2a2a2;
+    margin-top: 2em;
   }
+
+  .title {
+    font-size: 2.4em;
+    margin: 55px 0 35px 0;
+    font-weight: bold;
+
+    .position {
+      display: block;
+      padding-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+
   .description {
-    height: 3em;
-    font-size: 2em;
+    height: 18em;
+    // background-color: lightblue;
+    color: #888888;
+
+    .hello {
+      font-size: 1.2rem;
+      line-height: 1.9;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    ::before {
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      content: '•';
+      color: #3a7bd5;
+    }
+
+    .introduce {
+      padding: 0.2rem 0 0.2rem 1rem;
+      position: relative;
+      font-size: 1.1rem;
+      line-height: 1.9;
+
+      strong {
+        font-weight: 700;
+        color: #000000;
+      }
+    }
   }
 
   .contact {

@@ -1,5 +1,10 @@
 @import './@components/index';
 
+body {
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   max-width: 50rem;
