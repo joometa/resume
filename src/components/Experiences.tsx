@@ -10,7 +10,7 @@ type ExperiencesProps = {
 export const Experiences = ({ className }: ExperiencesProps) => {
   return (
     <section className="experience-container">
-      <h2 className="title">Work Experiences</h2>
+      <h2 className="title">WORK EXPERIENCES</h2>
 
       {workExperiences.map((ex: WorkExperience) => (
         <div className="row" key={ex.id}>
@@ -29,6 +29,7 @@ export const Experiences = ({ className }: ExperiencesProps) => {
               )}
             </span>
           </div>
+
           <div className="row-right">
             {ex.project.map((pjt, idx) => (
               <div className="project" key={idx}>
@@ -45,30 +46,35 @@ export const Experiences = ({ className }: ExperiencesProps) => {
                   )}
                 </span>
 
-                <h5>Description</h5>
+                <caption>Description</caption>
                 <p>{pjt.describe}</p>
 
-                <h5>What did I do</h5>
-                <ul>
+                <caption>What did I do</caption>
+                <ul className="what-did-I-do">
                   {pjt.whatIdid.map((did) => (
                     <li key={did}>{did}</li>
                   ))}
                 </ul>
 
-                <h5>Tech Stack</h5>
-                <p>{pjt.techStack}</p>
+                <caption>Tech Stack</caption>
+                <ul className="tech-stacks">
+                  {pjt.techStack.map((tech) => (
+                    <li key={`_${tech}`}>{tech}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       ))}
 
-      <h2 className="title">Personal Experiences</h2>
+      <h2 className="title">PERSONAL EXPERIENCES</h2>
 
       {personalExperiences.map((ex: PersonalExperience) => (
         <div className="row" key={ex.id}>
           <div className="row-left">
             <h3>{ex.shortInfo.name}</h3>
+            <span className="badge">{ex.shortInfo.type}</span>
             <span className="position">{ex.shortInfo.position}</span>
             <span className="work-range">
               <time dateTime="2021-11">{ex.shortInfo.range.from}</time>
@@ -89,18 +95,22 @@ export const Experiences = ({ className }: ExperiencesProps) => {
             <div className="project">
               <h4>{ex.project.title}</h4>
 
-              <h5>Description</h5>
+              <caption>Description</caption>
               <p>{ex.project.describe}</p>
 
-              <h5>What did I do</h5>
-              <ul>
+              <caption>What did I do</caption>
+              <ul className="what-did-I-do">
                 {ex.project.whatIdid.map((did) => (
                   <li key={did}>{did}</li>
                 ))}
               </ul>
 
-              <h5>Tech Stack</h5>
-              <p>{ex.project.techStack}</p>
+              <caption>Tech Stack</caption>
+              <ul className="tech-stacks">
+                {ex.project.techStack.map((tech, idx) => (
+                  <li key={idx}>{tech}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

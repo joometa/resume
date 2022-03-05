@@ -8,7 +8,7 @@ type EducationProps = {
 export const Education = ({ className }: EducationProps) => {
   return (
     <section className="edu-container">
-      <h2 className="title">Education</h2>
+      <h2 className="title">EDUCATION</h2>
       {education.map((edu) => (
         <div className="history" key={edu.id}>
           <h3>{edu.title}</h3>

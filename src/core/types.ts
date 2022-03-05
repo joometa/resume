@@ -15,7 +15,7 @@ export type Project = {
   range: Range;
   describe: string;
   whatIdid: string[];
-  techStack: string;
+  techStack: string[];
 };
 
 export type Education = {
@@ -34,6 +34,7 @@ export type PersonalExperience = {
   id: number;
   shortInfo: {
     name: string;
+    type: string;
     range: Range;
     position: string;
     link: string;
@@ -42,6 +43,6 @@ export type PersonalExperience = {
     title: string;
     describe: string;
     whatIdid: string[];
-    techStack: string;
+    techStack: string[];
   };
 };
